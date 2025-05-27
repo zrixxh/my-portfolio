@@ -1,28 +1,86 @@
-<footer class="footer">
-  <div class="social-links">
-    <a href="https://github.com/zrixxh" target="_blank" class="github">
-      <i class="fab fa-github"></i><span>GitHub</span>
-    </a>
-    <a href="https://discord.gg/BMcSNgstaf" target="_blank" class="discord">
-      <i class="fab fa-discord"></i><span>Skull</span>
-    </a>
-    <a href="https://discord.gg/M66kAJyJNs" target="_blank" class="discord">
-      <i class="fab fa-discord"></i><span>BotLab</span>
-    </a>
-    <a href="https://discord.gg/opq" target="_blank" class="discord">
-      <i class="fab fa-discord"></i><span>OPQ</span>
-    </a>
-    <a href="https://discord.gg/ukrich" target="_blank" class="discord">
-      <i class="fab fa-discord"></i><span>UKRich</span>
-    </a>
-    <a href="https://www.youtube.com/@COD-hope" target="_blank" class="youtube">
-      <i class="fab fa-youtube"></i><span>Hope</span>
-    </a>
-    <a href="https://www.youtube.com/@ukrichboi" target="_blank" class="youtube">
-      <i class="fab fa-youtube"></i><span>UKBoi</span>
-    </a>
-    <a href="https://kick.com/zrixxxh" target="_blank" class="kick">
-      <i class="fas fa-bolt"></i><span>Kick</span>
-    </a>
-  </div>
-</footer>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zrixxh's Hacker Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a2e0d5f5f9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="matrix-bg"></div>
+
+  <main class="terminal">
+    <pre id="typewriter" class="typewriter"></pre>
+  </main>
+
+  <footer class="footer">
+    <div class="social-links">
+      <a href="https://github.com/zrixxh" target="_blank" class="github">
+        <i class="fab fa-github"></i><span>GitHub</span>
+      </a>
+      <a href="https://discord.gg/BMcSNgstaf" target="_blank" class="discord">
+        <i class="fab fa-discord"></i><span>Skull</span>
+      </a>
+      <a href="https://discord.gg/M66kAJyJNs" target="_blank" class="discord">
+        <i class="fab fa-discord"></i><span>BotLab</span>
+      </a>
+      <a href="https://discord.gg/opq" target="_blank" class="discord">
+        <i class="fab fa-discord"></i><span>OPQ</span>
+      </a>
+      <a href="https://discord.gg/ukrich" target="_blank" class="discord">
+        <i class="fab fa-discord"></i><span>UKRich</span>
+      </a>
+      <a href="https://www.youtube.com/@COD-hope" target="_blank" class="youtube">
+        <i class="fab fa-youtube"></i><span>Hope</span>
+      </a>
+      <a href="https://www.youtube.com/@ukrichboi" target="_blank" class="youtube">
+        <i class="fab fa-youtube"></i><span>UKBoi</span>
+      </a>
+      <a href="https://kick.com/zrixxxh" target="_blank" class="kick">
+        <i class="fas fa-bolt"></i><span>Kick</span>
+      </a>
+    </div>
+  </footer>
+
+  <script>
+    const text = `
+Welcome to Zrixxh's Portfolio_
+
+Hey! I'm Zrixxh, a 21-year-old gaming enthusiast from the UK.
+This portfolio is a glimpse into what I do, what I enjoy, and the exciting projects I’m working on.
+
+Gaming is my passion—I spend my time immersed in:
+- GTA V
+- Call of Duty
+- FiveM
+- Battlefield V
+- CSGO 2
+- Roblox
+- Apex Legends
+- Watch Dogs 2
+- Mafia
+- FragPunk (coming soon)
+
+I'm building Scythe — a social app to change the world.
+
+In real life, I’m a proud parent to my kid Winter-Rose and engaged to my amazing fiancé Amy.
+
+Thanks for visiting. Let's connect.`;
+
+    let i = 0;
+    const speed = 25;
+    const typewriter = document.getElementById('typewriter');
+
+    function typeEffect() {
+      if (i < text.length) {
+        typewriter.innerHTML += text.charAt(i) === '\n' ? "<br/>" : text.charAt(i);
+        i++;
+        setTimeout(typeEffect, speed);
+      }
+    }
+
+    window.onload = typeEffect;
+  </script>
+</body>
+</html>
