@@ -1,77 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Zrixxh's Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700&display=swap" rel="stylesheet" />
-  <script src="https://kit.fontawesome.com/a2e0d5f5f9.js" crossorigin="anonymous"></script>
-</head>
-<body>
-  <header class="header">
-    <h1>Zrixxh's Portfolio</h1>
-    <button id="toggle-theme" aria-label="Toggle dark/light mode">🌙</button>
-  </header>
-
-  <main class="main-container">
-    <section class="intro card">
-      <h2>Welcome!</h2>
-      <p>Hey! I'm <strong>Zrixxh</strong>, a 21-year-old gaming enthusiast from the UK. This portfolio is a glimpse into what I do, what I enjoy, and the exciting projects I’m working on.</p>
-
-      <p>Gaming is my passion—I spend my time immersed in titles like GTA V, Call of Duty, FiveM, Battlefield V, CSGO 2, Roblox, Apex Legends, Watch Dogs 2, Mafia, and the upcoming FragPunk.</p>
-
-      <p>I’m also working on <strong>Scythe</strong>, a new social media app I'm really proud of!</p>
-
-      <p>On the personal side, I’m a proud parent to my kid, Winter-Rose, and engaged to my amazing fiancé, Amy.</p>
-
-      <p>Thanks for visiting! Let's connect and share the journey 🚀</p>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="social-links">
-      <a href="https://github.com/zrixxh" target="_blank">
-        <i class="fab fa-github"></i><span>GitHub</span>
-      </a>
-      <a href="https://discord.gg/BMcSNgstaf" target="_blank">
-        <i class="fab fa-discord"></i><span>Skull</span>
-      </a>
-      <a href="https://discord.gg/M66kAJyJNs" target="_blank">
-        <i class="fab fa-discord"></i><span>BotLab</span>
-      </a>
-      <a href="https://discord.gg/opq" target="_blank">
-        <i class="fab fa-discord"></i><span>OPQ</span>
-      </a>
-      <a href="https://discord.gg/ukrich" target="_blank">
-        <i class="fab fa-discord"></i><span>UKRich</span>
-      </a>
-      <a href="https://www.youtube.com/@COD-hope" target="_blank">
-        <i class="fab fa-youtube"></i><span>Hope</span>
-      </a>
-      <a href="https://www.youtube.com/@ukrichboi" target="_blank">
-        <i class="fab fa-youtube"></i><span>UKBoi</span>
-      </a>
-      <a href="https://kick.com/zrixxxh" target="_blank">
-        <i class="fas fa-bolt"></i><span>Kick</span>
-      </a>
-    </div>
-  </footer>
-
-  <script>
-    const toggleBtn = document.getElementById('toggle-theme');
-    const body = document.body;
-
-    function updateToggleIcon() {
-      toggleBtn.textContent = body.classList.contains('light') ? '🌙' : '☀️';
-    }
-
-    toggleBtn.addEventListener('click', () => {
-      body.classList.toggle('light');
-      updateToggleIcon();
-    });
-
-    updateToggleIcon();
-  </script>
-</body>
-</html>
+<footer class="footer">
+  <div class="social-links">
+    <a href="https://github.com/zrixxh" target="_blank" class="github">
+      <i class="fab fa-github"></i><span>GitHub</span>
+    </a>
+    <a href="https://discord.gg/BMcSNgstaf" target="_blank" class="discord">
+      <i class="fab fa-discord"></i><span>Skull</span>
+    </a>
+    <a href="https://discord.gg/M66kAJyJNs" target="_blank" class="discord">
+      <i class="fab fa-discord"></i><span>BotLab</span>
+    </a>
+    <a href="https://discord.gg/opq" target="_blank" class="discord">
+      <i class="fab fa-discord"></i><span>OPQ</span>
+    </a>
+    <a href="https://discord.gg/ukrich" target="_blank" class="discord">
+      <i class="fab fa-discord"></i><span>UKRich</span>
+    </a>
+    <a href="https://www.youtube.com/@COD-hope" target="_blank" class="youtube">
+      <i class="fab fa-youtube"></i><span>Hope</span>
+    </a>
+    <a href="https://www.youtube.com/@ukrichboi" target="_blank" class="youtube">
+      <i class="fab fa-youtube"></i><span>UKBoi</span>
+    </a>
+    <a href="https://kick.com/zrixxxh" target="_blank" class="kick">
+      <i class="fas fa-bolt"></i><span>Kick</span>
+    </a>
+  </div>
+</footer>
