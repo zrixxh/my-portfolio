@@ -1,23 +1,91 @@
+/* Base styles (dark mode default) */
 body {
   background-color: #121212;
-  color: white;
+  color: #eee;
   font-family: Arial, sans-serif;
-  text-align: center;
   padding: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  background-color: #222;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.7);
+}
+
+h1, h2 {
+  margin-bottom: 0.5em;
+}
+
+p {
+  line-height: 1.5;
+  margin-bottom: 1em;
+}
+
+ul {
+  list-style: disc inside;
+  margin-bottom: 1.5em;
+  padding-left: 0;
+}
+
+.links-list li {
+  margin-bottom: 0.6em;
 }
 
 a {
   color: #1e90ff;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600;
+  transition: color 0.2s;
 }
 
-.container {
-  max-width: 600px;
-  margin: auto;
-  padding: 20px;
-  border: 1px solid #333;
-  border-radius: 10px;
-  background-color: #222;
+a:hover {
+  color: #63b3ed;
 }
 
+#toggle-theme {
+  cursor: pointer;
+  padding: 8px 16px;
+  margin-bottom: 20px;
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+#toggle-theme:hover {
+  background-color: #63b3ed;
+}
+
+/* Light mode styles */
+body.light {
+  background-color: #f0f0f0;
+  color: #222;
+}
+
+body.light .container {
+  background-color: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+body.light a {
+  color: #007acc;
+}
+
+body.light a:hover {
+  color: #004a99;
+}
+
+body.light #toggle-theme {
+  background-color: #007acc;
+  color: white;
+}
+
+body.light #toggle-theme:hover {
+  background-color: #004a99;
+}
