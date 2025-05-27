@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Zrixxh's Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="container">
+    <button id="toggle-theme">Switch to Light Mode</button>
+
     <h1>Welcome to Zrixxh's Portfolio</h1>
     <p>Hey! I'm Zrixxh, a 21-year-old gaming enthusiast from the UK. This portfolio is a glimpse into what I do, what I enjoy, and the exciting projects I’m working on.</p>
 
@@ -26,8 +29,34 @@
     </ul>
 
     <h2>Connect with me</h2>
-    <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+    <ul class="links-list">
+      <li><a href="https://github.com/zrixxh" target="_blank" rel="noopener">GitHub</a></li>
+      <li><a href="https://discord.gg/BMcSNgstaf" target="_blank" rel="noopener">Skull Discord</a></li>
+      <li><a href="https://discord.gg/M66kAJyJNs" target="_blank" rel="noopener">BotLab Discord</a></li>
+      <li><a href="https://discord.gg/qvKCHHf7Vs" target="_blank" rel="noopener">opq tag Discord</a></li>
+      <li><a href="https://discord.gg/opq" target="_blank" rel="noopener">OPQ Discord</a></li>
+      <li><a href="https://discord.gg/ukrich" target="_blank" rel="noopener">ukrich Discord</a></li>
+      <li><a href="https://discord.gg/Xa7BrUfUDP" target="_blank" rel="noopener">Scythe Discord</a></li>
+      <li><a href="https://discord.gg/FcX5Z7TWsK" target="_blank" rel="noopener">Clouds Discord</a></li>
+      <li><a href="https://www.youtube.com/@COD-hope" target="_blank" rel="noopener">Hope's YouTube Channel</a></li>
+      <li><a href="https://www.youtube.com/@ukrichboi" target="_blank" rel="noopener">ukrichboi YouTube Channel</a></li>
+      <li><a href="https://kick.com/zrixxxh" target="_blank" rel="noopener">ukrichboi Kick Channel</a></li>
+    </ul>
   </div>
+
+  <script>
+    const toggleBtn = document.getElementById('toggle-theme');
+    const body = document.body;
+
+    toggleBtn.addEventListener('click', () => {
+      if (body.classList.contains('light')) {
+        body.classList.remove('light');
+        toggleBtn.textContent = 'Switch to Light Mode';
+      } else {
+        body.classList.add('light');
+        toggleBtn.textContent = 'Switch to Dark Mode';
+      }
+    });
+  </script>
 </body>
 </html>
-
